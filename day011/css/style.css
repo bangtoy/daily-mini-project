@@ -105,7 +105,7 @@ span {
 }
 
 .overlay:target img {
-    animation: zoomFade 0.5s;
+    animation: justFade 0.5s;
 }
 
 .overlay .close {
@@ -122,7 +122,39 @@ span {
 }
 
 
+/* next */
+
+.next,
+.prev {
+    font-size: 50px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    margin-left: 30px;
+    color: #214151;
+    opacity: 0;
+}
+
+.prev {
+    margin-left: -60px;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+    animation: justFade 0.5s 0.5s forwards;
+}
+
+
 /* animasi */
+
+@keyframes justFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes zoomFade {
     0% {
