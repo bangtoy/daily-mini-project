@@ -1,0 +1,25 @@
+// .main
+//     background-color: lightblue
+
+//     .main-header
+//         font-size: 2em
+
+//     .main-paragraph
+//         font-size: 1.4em
+
+.main, footer
+    h1, p
+        letter-spacing: 1px
+
+.main
+    .container &
+        background-color: salmon
+
+    &:hover
+        background-color: pink
+
+    #{&}-heder
+        font-size: 2em
+
+    & &-paragraph
+        font-size: 1.4em
