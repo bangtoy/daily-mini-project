@@ -2,6 +2,7 @@ $color-1: #9ad3bc;
 $color-2: #f3eac2;
 $color-3: #f5b461;
 $color-4: #ec524b;
+$color: ( '1': #9ad3bc, '2': #f3eac2, '3': #f5b461, '4': #ec524b);
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +19,8 @@ nav {
     background-color: $color-1;
     justify-content: space-around;
     // padding: 20px 0;
-    color: $color-2;
+    color: map-get($map: $color, $key: '2');
+    // color: $color-2;
     height: 50px;
     align-items: center;
     .logo {
@@ -70,6 +72,11 @@ nav {
             }
             ~span:nth-child(3) {
                 transform: scale(0);
+            }
+        }
+        &:hover {
+            ~span {
+                background-color: $color-3;
             }
         }
     }

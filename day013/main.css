@@ -92,6 +92,10 @@ nav ul li a:hover {
           transform: scale(0);
 }
 
+.toggle input:hover ~ span {
+  background-color: #f5b461;
+}
+
 .toggle span {
   display: block;
   width: 28px;
