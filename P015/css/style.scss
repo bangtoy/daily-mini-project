@@ -1,0 +1,24 @@
+$color-1: #c5d7bd;
+$color-2: #9fb8ad;
+$color-3: #383e56;
+$color-4: #fb743e;
+.jumbotron {
+    background-color: $color-2;
+    img {
+        width: 200px;
+        border: 5px solid $color-4;
+    }
+    h1,
+    p {
+        color: $color-3;
+        span {
+            color: $color-4;
+            font-size: 1.2em;
+        }
+    }
+}
+
+.about hr {
+    width: 250px;
+    border-top: 2px solid $color-4;
+}

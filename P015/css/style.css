@@ -1,0 +1,25 @@
+.jumbotron {
+  background-color: #9fb8ad;
+}
+
+.jumbotron img {
+  width: 200px;
+  border: 5px solid #fb743e;
+}
+
+.jumbotron h1,
+.jumbotron p {
+  color: #383e56;
+}
+
+.jumbotron h1 span,
+.jumbotron p span {
+  color: #fb743e;
+  font-size: 1.2em;
+}
+
+.about hr {
+  width: 250px;
+  border-top: 2px solid #fb743e;
+}
+/*# sourceMappingURL=style.css.map */
